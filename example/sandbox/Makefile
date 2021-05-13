@@ -1,13 +1,13 @@
 include ../project.mk
 
-CFLAGS +=-I ../qfib
+CFLAGS += -I ../qfib
 
-SRCFOLDER :=.
-SRC :=main.cpp
+SRCFOLDER := .
+SRC := main.cpp
 
-BIN :=test
+BIN := test
 
-MAKEFOLDER:=../.make
+MAKEFOLDER:= ../.make
 include $(MAKEFOLDER)/defaults.mk
 include $(MAKEFOLDER)/bin.mk
 

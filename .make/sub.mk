@@ -1,7 +1,7 @@
 .PHONY: all
 all: debug
 
-MAKESUBDIR = \
+MAKESUBDIR = 																								\
 	@for i in $(SUBFOLDERS); do 																		\
 		echo -e "----------------------------------------\r-----------------$$i"; 		\
 		$(MAKE) -C $$i $@ --no-print-directory || break; 										\

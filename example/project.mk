@@ -1,8 +1,8 @@
 # Project definitions
-CC = g++
+CC := g++
 
-CFLAGS :=-std=c++2a
-DEBUGCFLAGS:=-g -D DEBUG
-RELEASECFLAGS:=-O3 -D RELEASE
+CFLAGS := -std=c++2a
+DEBUGCFLAGS:= -g -D DEBUG
+RELEASECFLAGS:= -O3 -D RELEASE
 
-BUILDFOLDER =build/$(PREFIX)
+BUILDFOLDER = build/$(PREFIX)

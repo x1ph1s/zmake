@@ -1,12 +1,12 @@
 include ../project.mk
 
-CFLAGS +=-I .
+CFLAGS += -I .
 
-SRCFOLDER :=.
-SRC :=core/qfib.cpp
+SRCFOLDER := .
+SRC := core/qfib.cpp
 
-LIB :=libqfib.a
+LIB := libqfib.a
 
-MAKEFOLDER :=../.make
+MAKEFOLDER := ../.make
 include $(MAKEFOLDER)/defaults.mk
 include $(MAKEFOLDER)/lib.mk
