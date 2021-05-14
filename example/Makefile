@@ -1,3 +1,3 @@
-SUBFOLDERS = qfib sandbox
+SUBFOLDERS := qfib sandbox
 
 include .make/sub.mk

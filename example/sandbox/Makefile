@@ -1,4 +1,6 @@
-MAKEFOLDER:= ../.make
+# Binary Makefile
+
+MAKEFOLDER := ../.make
 include $(MAKEFOLDER)/util.mk
 include ../project.mk
 
@@ -13,4 +15,3 @@ BIN := test
 
 include $(MAKEFOLDER)/defaults.mk
 include $(MAKEFOLDER)/bin.mk
-

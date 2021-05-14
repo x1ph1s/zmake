@@ -13,4 +13,3 @@ undefine __link_DEBUG
 undefine __link_RELEASE
 
 endef
-

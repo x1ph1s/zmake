@@ -1,3 +1,5 @@
+# Library Makefile
+
 MAKEFOLDER := ../.make
 include $(MAKEFOLDER)/util.mk
 include ../project.mk

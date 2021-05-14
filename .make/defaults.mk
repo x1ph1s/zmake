@@ -1,5 +1,5 @@
-.PHONY:all
-all:debug
+.PHONY: all
+all: debug
 
 include $(MAKEFOLDER)/target.mk
 

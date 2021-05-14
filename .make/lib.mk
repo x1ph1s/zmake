@@ -7,7 +7,7 @@ DEPS := $(OBJ:.o=.d)
 -include $(DEPS)
 
 DIRS := $(sort $(subst $(_SRCFOLDER)/,,$(dir $(_SRC))))
-.PHONY:dirs
+.PHONY: dirs
 dirs:
 	@mkdir -p $(_BUILDFOLDER)/obj
 	@mkdir -p $(_BUILDFOLDER)/lib
