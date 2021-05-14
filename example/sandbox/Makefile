@@ -1,14 +1,16 @@
+MAKEFOLDER:= ../.make
+include $(MAKEFOLDER)/util.mk
 include ../project.mk
 
 CFLAGS += -I ../qfib
+
+$(eval $(call link,build/qfib/%m/lib,qfib))
 
 SRCFOLDER := .
 SRC := main.cpp
 
 BIN := test
 
-MAKEFOLDER:= ../.make
 include $(MAKEFOLDER)/defaults.mk
 include $(MAKEFOLDER)/bin.mk
 
-$(eval $(call link,build/qfib/%m/lib,qfib))

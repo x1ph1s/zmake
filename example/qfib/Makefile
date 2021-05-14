@@ -1,3 +1,5 @@
+MAKEFOLDER := ../.make
+include $(MAKEFOLDER)/util.mk
 include ../project.mk
 
 CFLAGS += -I .
@@ -7,6 +9,5 @@ SRC := core/qfib.cpp
 
 LIB := libqfib.a
 
-MAKEFOLDER := ../.make
 include $(MAKEFOLDER)/defaults.mk
 include $(MAKEFOLDER)/lib.mk
