@@ -1,8 +1,10 @@
-MAKESUBDIR = 																								\
-	@for i in $(SUBFOLDERS); do 																		\
-		echo -e "----------------------------------------\r-----------------$$i"; 		\
-		$(MAKE) -C $$i $@ --no-print-directory || break; 										\
-	done
+define MAKESUBDIR
+@for i in $(SUBFOLDERS); do\
+	echo -e "----------------------------------------\r-----------------$$i";\
+	$(MAKE) -C $$i $@ --no-print-directory || break;\
+done;\
+
+endef
 
 .PHONY: all
 all:
